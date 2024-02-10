@@ -1,4 +1,7 @@
 import React from "react";
+import Course from "../Course";
+import code from "../../assets/code.jpg"
+import paste from "../../assets/paste.jpg"
 
 export default function page() {
   return (
@@ -52,8 +55,24 @@ export default function page() {
               type="search"
               name="search"
               id="search"
-            />{" "}
+            />
             <button className="p-2 border-1 border-slate-400">Filters</button>
+          </div>
+        </div>
+        <div className="courses mt-12">
+          <div className="flex space-x-8">
+            <Course
+              image={code}
+              width="400"
+              height="400"
+              tutor="Oketola Samuel"
+            />
+            <Course
+              image={paste}
+              width="400"
+              height="350"
+              tutor="Isaac Folarin"
+            />
           </div>
         </div>
       </div>
