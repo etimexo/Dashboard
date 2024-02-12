@@ -6,7 +6,7 @@ import paste from "../../assets/paste.jpg"
 export default function page() {
   return (
     <div className="w-full bg-white flex ">
-      <div className="w-[25%] border-2 text-center flex flex-col space-y-80 h-[100vh] text-black">
+      <div className="w-[25%] position: fixed border-2 text-center flex flex-col space-y-80 h-[100vh] text-black">
         <div>
           <input
             type="search"
@@ -59,13 +59,15 @@ export default function page() {
             <button className="p-2 border-1 border-slate-400">Filters</button>
           </div>
         </div>
-        <div className="courses mt-12">
+        <div className="courses ml-80 mt-12">
           <div className="flex space-x-8">
             <Course
               image={code}
               width="400"
               height="400"
               tutor="Oketola Samuel"
+              course="Web Development"
+              content="ive into the world of coding and design as we explore the fundamentals of web development. From HTML to CSS, JavaScript, and beyond, this course offers a hands-on journey to master the skills needed to build responsive and dynamic websites."
             />
             <Course
               image={paste}

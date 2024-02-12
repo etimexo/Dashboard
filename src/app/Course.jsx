@@ -1,7 +1,5 @@
 import React from "react";
 import Image from "next/image";
-// import course from "../assets/code.jpg"
-// import paste from "../assets/paste.jpg"
 
 export default function Course(props) {
   return (
@@ -14,12 +12,16 @@ export default function Course(props) {
           </div>
           <div>
             <p className="text-white">Tutor</p>
+            
           </div>
         </div>
         <div>
           <h2 className="text-purple-700 font-bold">3 weeks</h2>
         </div>
+        
       </div>
+      <h2>{props.course}</h2><br />
+        <p className="border-2 w-64 border-red-500">{props.content}</p>
     </div>
   );
 }
